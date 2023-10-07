@@ -1,0 +1,1964 @@
+@media screen and (min-width: 1081px) {
+html{
+scroll-behavior: smooth;
+}
+
+body {
+    transition: 0.3s;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.anchor{
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+span{
+    width: 0px;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    color: white;
+    position: fixed;
+    top: 22px;
+    left: 10%;
+    right: 0;
+    z-index: 1;
+    zoom:0.75;
+}
+
+#navbar_icon{
+    display: none; 
+} 
+#navbar-overlay{
+    display:none;
+}
+
+.navbar {
+    position: fixed;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out; /* Smooth transition */
+}
+
+.navbar-content {
+    width: 100%;
+    /*max-width: 1200px; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+
+}
+
+.nav-item {
+    color: white;
+    font-size: 18px;
+    font-family: Castoro;
+    font-weight: 400;
+    text-transform: capitalize;
+    word-wrap: break-word;
+    z-index: 100;
+}
+
+#last_nav_item {
+    padding-right: 5%;
+}
+
+
+
+.hero {
+    width: 100%;
+    height: 80vh;
+    max-height: 80vh;
+    min-height: 80vh;
+    background-image: url("./images/hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Center the background image */
+    /*background: #8AA2A6;*/
+    position: relative;
+    animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+}
+
+
+.hero-holder:hover {
+    transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-content {
+    position: absolute;
+    margin-left: 15%;
+    top: 80%;
+    zoom: 60%;
+}
+
+/*Section 1*/
+.section-container {
+    width: 100%;
+    min-height: max-content;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.section_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 15%;
+    margin-right: 10%;
+    transition: 0.4s;
+    padding-top: 70px;
+}
+
+
+.section_title,
+h1 {
+    color: black;
+    font-size: 45px;
+    font-family: NT Wagner;
+    font-weight: 700;
+    text-transform: capitalize;
+    word-wrap: break-word;
+    transition: 0.2s;
+}
+
+#section1_aboutus_title {
+    padding-bottom: 10%;
+}
+
+
+.section_body {
+    color: black;
+    font-size: 20px;
+    font-family: Castoro;
+    font-weight: 400;
+    transition: 0.4s; 
+    padding-bottom: 105px;
+}
+
+#section1_aboutus_image_section {
+    display: flex;
+    /*align-self:flex-end;*/
+    margin-left: auto;
+    /* added */
+    }
+
+
+#section1_aboutus_image {
+    width: 30vw;
+    height: 600px;
+    object-fit: cover;
+    /* Scale the image to cover the container */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+
+
+}
+
+/*section 2*/
+.section-container_column {
+    width: 100%;
+    height: 500px;
+    max-height: 60vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #1C4866;
+    
+}
+
+.section_text_column {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    /* Add this line to center vertically */
+    align-content: center;
+    /* Add this line for additional centering */
+    padding-top: 70px;
+    margin-left: 15%;
+
+    
+}
+
+#section2_ourpurpose_title {
+    color: white;
+    margin-right: auto;
+    
+}
+
+
+
+.section_list {
+    margin-right: 30%;
+    min-width: 50vw;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    transition: 0.4s;
+}
+
+.section_list_title {
+    color: white;
+    font-size: 25px;
+    font-family: NT Wagner;
+    font-weight: 700;
+    line-height: 60px;
+    word-wrap: break-word
+}
+
+.section_list_body {
+    color: white;
+    font-size: 18px;
+    font-family: Castoro;
+    font-weight: 400;
+    overflow: auto;
+    word-wrap: break-word;
+    max-width: 40vw;
+}
+
+/*section3 */
+#section3_ourthesis {
+    background-color: white;
+    height: max-content;
+    min-height: 350px;
+    transition: max-height 0.5s ease-in-out;
+    display: flex;
+    align-items: top;
+    align-content: center;
+    /* Add a transition for smooth expansion/collapse */
+}
+
+    
+
+#section3_ourthesis_title {
+    color: rgb(0, 0, 0);
+    margin-right: auto;
+}
+
+.accordion {
+    margin-right: 30%;
+    max-width: 60vw;
+    min-width: 50vw;
+    transition: 0.4s;
+}
+
+li {
+    font-size: 18px;
+}
+
+
+.accordion-header {
+    color: black;
+    background-color: transparent;
+    border: 0px;
+    font-size: 25px;
+    font-family: NT Wagner;
+    font-weight: 700;
+    line-height: 60px;
+    word-wrap: break-word
+}
+
+.accordion-content {
+    color: black;
+    font-size: 18px;
+    font-family: Castoro;
+    font-weight: 400;
+    word-wrap: break-word;
+    max-width: 40vw;
+    max-height: 0;
+    /* Initially, hide the content by setting max-height to 0 */
+    overflow: hidden;
+    /* Hide any overflow content */
+    transition: max-height 0.5s ease-in-out;
+    /* Adjust the transition duration (0.5s in this example) */
+}
+
+
+/* Style for the "+" icon at the end of each section */
+.accordion-header::after {
+    content: "+";
+    font-size: 20px;
+    margin-left: 15px;
+    transition: transform 0.5s ease;
+    /* Increase the transition duration to 0.5s for a slower change */
+    display: inline-block;
+    /* Ensure the element takes up space for the transform to work */
+    transform: rotate(0deg);
+    /* Start with no rotation */
+
+}
+
+/* Style for the "-" icon when the section is expanded */
+.accordion-header.active::after {
+    content: "-";
+    transform: rotate(180deg);
+}
+
+
+
+
+
+/*section break*/
+
+
+#section3_4_break {
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    max-height: 50vh;
+    min-height: 30vh;
+    background-image: url("./images/sectionbreak3_4_image.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+    /* Center the background image */
+    /*background: #8AA2A6;*/
+}
+
+/*section 4*/
+
+
+#section4_Tucson_image_section {
+    width: 50%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+    text-align: center; /* Center the content horizontally */
+}
+
+
+
+#section4_activeprojects_body b {
+    color: black;
+    font-size: 40px;
+    font-family: Caslon;
+    font-style: italic;
+    font-weight: 5;
+    line-height: 60px;
+}
+
+#section4_Tucson_image {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    width: 300px;
+    height: 600px;
+    object-fit: cover;
+    /* Scale the image to cover the container */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+
+}
+
+.line_break {
+    height: 5vh;
+}
+
+/*section 5*/
+#section5_stat {
+    width: 100%;
+    min-height: 500px;
+    max-height: 70vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+}
+
+.stat_banner {
+    width: 33.33%;
+    height: 500px;
+    min-height: 500px;
+}
+
+.stat_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 65%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 80px;
+    font-family: NT Wagner;
+    font-weight: 700;
+    text-transform: capitalize;
+    word-wrap: break-word;
+    transition: 0.2s;
+}
+
+
+.stat_subtitle {
+    width: 100%;
+    height: 45%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    transition: 0.2s;
+
+}
+
+.stat_subtitle_subtextbox {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: Castoro;
+    font-weight: 400;
+    word-wrap: normal;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#cap_invest {
+    background-image: url("./images/cap_invest.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Center the background image */
+    /*background: #8AA2A6;*/
+    position: relative;
+    background-position: 50%;
+    animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+
+}
+
+#exp {
+    background-image: url("./images/exp_image.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Center the background image */
+    /*background: #8AA2A6;*/
+    position: relative;
+    background-position: 50%;
+    animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+}
+
+#IRR {
+    background-image: url("./images/IRR_image.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Center the background image */
+    /*background: #8AA2A6;*/
+    position: relative;
+    background-position: 50% 80%;
+    animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+}
+
+#cap_invest_text{
+    min-width: 20%;
+}
+/*section6_contactus*/
+
+#section6_contactus {
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+#contact_us_wrapper {
+    position;
+    top: 35%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#contact_us {
+    position: absolute;
+    top: 35%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#contact_us_text {
+    color: black;
+    font-size: 60px;
+    font-family: Castoro;
+    font-weight: 400;
+    text-decoration: underline;
+    text-transform: lowercase;
+    word-wrap: break-word;
+    padding-right: 20px;
+}
+
+#contact_logo {
+    margin-top: 5%;
+    transition: 0.2s;
+
+}
+
+#emailtext{
+    position: absolute;
+    top: 65%;
+    flex-direction: row;
+    color: black;
+    font-size: 18px;
+    font-family: Castoro;
+    font-weight: 400;
+    word-wrap: break-word;
+    max-width: 40vw;
+    overflow: hidden;
+    /* Hide any overflow content */
+    transition: max-height 0.5s ease-in-out;
+}
+
+/*end section*/
+.bottom_bar {
+    width: 100%;
+    height: 12vh;
+    min-height: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #CAE9FF;
+}
+
+#logo_green {
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+#logo_green img {
+    height: 50%;
+}
+
+#bottom_bar_text {
+    margin-top: 3.7%;
+    margin-left: 4%;
+    margin-right: 5%;
+    color: black;
+    font-size: 12px;
+    font-family: Castoro;
+    font-weight: 400;
+    word-wrap: break-word
+}
+}
+
+@media screen and (max-width: 1080px) and (min-width:725.0px){
+    html{
+        scroll-behavior: smooth;
+        }
+        
+        body {
+            transition: 0.3s;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        a.anchor{
+            display: block;
+            position: relative;
+            top: -250px;
+            visibility: hidden;
+        }
+        span{
+            width: 0px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .logo {
+            color: white;
+            position: fixed;
+            top: 22px;
+            left: 55vw;
+            right: 0;
+            z-index: 1;
+            zoom:0.75;
+            transition: 0.3s;
+        }
+        
+        #navbar_icon{
+            border: none;
+            background-color:transparent;
+            width: 40px;
+            height: 40px;
+            margin-right: 93%;
+            transition: 0.3s;
+            justify-content: center;
+            float: left;
+        } 
+        #navbar_icon_image{
+            width: 20px;
+            height: 20px;
+        }
+
+        /*THIS PART IS FOR THE OVERLAY NAV*/
+
+        #navbar-overlay {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 0%;
+            background-color: whitesmoke;
+            z-index: 100;
+            overflow: hidden;
+            transition: height 0.3s ease-in-out; /* Smooth transition */
+            box-shadow: 0 10px 10px 0 rgba(0,0,0,.2);
+
+        }
+
+
+        #closeNav {
+            display: block;
+            float: left;
+            position: absolute;
+            top: 17px;
+            left: 17px;
+            border: none;
+            background-color:transparent;
+            width: 60px;
+            height: 60px;
+            transition: 0.3s;
+            justify-content: center;
+            transition: 0.5s;
+        }
+
+        #navbar-content-overlay{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #nav-item-overlay-container{
+            margin-top: 50px;
+            height:250px;
+        }
+        .nav-item-overlay{
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;     
+        }
+
+        .nav-item-overlay a{
+            text-align: center;
+            color: black;
+            font-size: 20px;
+            font-family: Castoro;
+            font-weight: 400;
+            transition: 0.4s;
+            display: block; /* Ensure the anchor tag takes up the entire width of its container */
+            width: 100%; /* Ensure the anchor tag takes up the entire width of its container */
+        
+        }
+        #closeNav{
+            border: none;
+            background-color:transparent;
+            width: 40px;
+            height: 40px;
+            transition: 0.3s;
+            margin-right: 5px;
+            justify-content: center;
+            float: left;
+        } 
+        #close_button{
+            width: 40px;
+            height: 40px;
+            zoom: 2x;
+        }
+
+        /*OVERLAY END*/
+
+
+        .navbar {
+            position: fixed;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            left: 0;
+            right: 0;
+            z-index: 99;
+            background-color: transparent;
+            transition: background-color 0.2s ease-in-out; /* Smooth transition */
+        }
+        
+        .navbar-content {
+            width: 100%;
+            /*max-width: 1200px; */
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+            gap: 40px;
+        
+        }
+        
+        .nav-item {
+            color: white;
+            font-size: 18px;
+            font-family: Castoro;
+            font-weight: 400;
+            text-transform: capitalize;
+            word-wrap: break-word;
+            z-index: 100;
+        }
+        
+        .nav-item:last-child {
+            margin-right: 5%;
+        }
+        
+        
+        
+        .hero {
+            width: 100%;
+            height: 60vh;
+            background-image: url("./images/hero.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* Center the background image */
+            /*background: #8AA2A6;*/
+            position: relative;
+            animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+            transition: 0.4s;
+
+
+        }
+        
+        
+        .hero-holder:hover {
+            transform: scale(1.2);
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .hero-content {
+            position: absolute;
+            margin-left: 5%;
+            scale:0.7;
+            top: 70%;
+            zoom: 60%;
+        }
+        
+        /*Section 1*/
+        .section-container {
+            width: 100%;
+            height: 50%;
+            min-height: max-content;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+        
+        .section_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-left: 10%;
+            margin-right: 10%;
+            transition: 0.4s;
+            padding-top: 70px;
+            min-height: max-content;
+        }
+        
+        
+        .section_title,
+        h1 {
+            color: black;
+            font-size: 30px;
+            font-family: NT Wagner;
+            font-weight: 700;
+            text-transform: capitalize;
+            word-wrap: break-word;
+            transition: 0.2s;
+        }
+        
+        #section1_aboutus_title {
+            padding-bottom: 10%;
+        }
+        
+        
+        .section_body {
+            color: black;
+            font-size: 16px;
+            font-family: Castoro;
+            font-weight: 400;
+            transition: 0.4s; 
+        }
+        
+        #section1_aboutus_image_section {
+            display: flex;
+            /*align-self:flex-end;*/
+            margin-left: auto;
+            /* added */
+            }
+        
+        
+        #section1_aboutus_image {
+            width: 30vw;
+            height: 50vh;
+            max-height: 400px;
+            object-fit: cover;
+            /* Scale the image to cover the container */
+            animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+        
+        
+        }
+        
+        /*section 2*/
+        .section-container_column {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            background-color: #1C4866;
+            
+        }
+        
+        .section_text_column {
+            display: flex;
+            justify-content: center;
+            align-items: top;
+            /* Add this line to center vertically */
+            align-content: center;
+            /* Add this line for additional centering */
+            padding-top: 70px;
+            margin-left: 10%;
+        
+        }
+        
+        #section2_ourpurpose_title {
+            color: white;
+            margin-right: auto;
+            
+        }
+                
+        #section2_ourpurpose_list_item1_title {
+            line-height: 140%;
+            padding-bottom: 8px;
+        }
+
+
+        
+        .section_list {
+            margin-right: 30%;
+            min-width: 50vw;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            transition: 0.4s;
+        }
+        .section_list:last-child {
+            margin-bottom: 15%;
+        }
+        
+        .section_list_title {
+            color: white;
+            font-size: 25px;
+            font-family: NT Wagner;
+            font-weight: 700;
+            line-height: 60px;
+            word-wrap: break-word
+        }
+        
+        .section_list_body {
+            color: white;
+            font-size: 16px;
+            font-family: Castoro;
+            font-weight: 400;
+            overflow: auto;
+            word-wrap: break-word;
+            max-width: 45vw;
+        }
+        
+        /*section3 */
+        #section3_ourthesis {
+            background-color: white;
+            height: max-content;
+            min-height: max-content;
+            max-height: none;
+        
+            transition: max-height 0.5s ease-in-out;
+            display: flex;
+            align-items: top;
+            align-content: center;
+            padding-bottom: 8%;
+            /* Add a transition for smooth expansion/collapse */
+        }
+        
+        #section3_ourthesis_list_item1_title{
+            line-height: 140%;
+            padding-bottom: 18px;
+        }    
+        
+        #section3_ourthesis_title {
+            color: rgb(0, 0, 0);
+            margin-right: auto;
+        }
+        
+        .accordion {
+            margin-right: 30%;
+            max-width: 60vw;
+            min-width: 50vw;
+            transition: 0.4s;
+        }
+        
+        li {
+            font-size: 16px;
+        }
+        
+        
+        .accordion-header {
+            color: black;
+            background-color: transparent;
+            border: 0px;
+            font-size: 25px;
+            font-family: NT Wagner;
+            font-weight: 700;
+            line-height: 60px;
+            word-wrap: break-word
+        }
+        
+        .accordion-content {
+            color: black;
+            font-size: 18px;
+            font-family: Castoro;
+            font-weight: 400;
+            word-wrap: break-word;
+            max-width: 43vw;
+            max-height: 0;
+            /* Initially, hide the content by setting max-height to 0 */
+            overflow: hidden;
+            /* Hide any overflow content */
+            transition: max-height 0.5s ease-in-out;
+            /* Adjust the transition duration (0.5s in this example) */
+        }
+        
+        
+        /* Style for the "+" icon at the end of each section */
+        .accordion-header::after {
+            content: "+";
+            font-size: 20px;
+            margin-left: 15px;
+            transition: transform 0.5s ease;
+            /* Increase the transition duration to 0.5s for a slower change */
+            display: inline-block;
+            /* Ensure the element takes up space for the transform to work */
+            transform: rotate(0deg);
+            /* Start with no rotation */
+        
+        }
+        
+        /* Style for the "-" icon when the section is expanded */
+        .accordion-header.active::after {
+            content: "-";
+            transform: rotate(180deg);
+        }
+        
+        
+        
+        
+        
+        /*section break*/
+        
+        
+        #section3_4_break {
+            display: flex;
+            width: 100%;
+            height: 25vh;
+            background-image: url("./images/sectionbreak3_4_image.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+            /* Center the background image */
+            /*background: #8AA2A6;*/
+        }
+        
+        /*section 4*/
+        
+        
+
+        
+        #section4_Tucson_image_section {
+            display: flex;
+            /*align-self:flex-end;*/
+            margin-left: auto;
+            /* added */
+            margin-right: 5%;
+            /* added */
+            margin-top: 5%;
+            margin-bottom: 5%;
+            animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+            transition: 0.2s;
+      
+            
+        }
+        
+        
+        #section4_activeprojects_body b {
+            color: black;
+            font-size: 25px;
+            font-family: Caslon;
+            font-style: italic;
+            font-weight: 5;
+            line-height: 60px;
+        }
+        
+        #section4_Tucson_image {
+            width: 20vw;
+            height: 400px;
+            object-fit: cover;
+            /* Scale the image to cover the container */
+            animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+        
+        }
+        
+        .line_break {
+            height: 5vh;
+        }
+        
+        /*section 5*/
+        #section5_stat {
+            width: 100%;
+            max-height: 40vh;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: white;
+            transition: 0.2s;
+            min-height: 400px;
+
+        }
+        
+        .stat_banner {
+            width: 33.33%;
+            height: 40vh;
+            min-height: 400px;
+        
+        }
+        
+        .stat_title {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            height: 65%;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            color: white;
+            font-size: 80px;
+            font-family: NT Wagner;
+            font-weight: 700;
+            text-transform: capitalize;
+            word-wrap: break-word;
+            transition: 0.2s;
+        }
+        
+        
+        .stat_subtitle {
+            width: 100%;
+            height: 40%;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            transition: 0.2s;
+        
+        }
+        
+        .stat_subtitle_subtextbox {
+            text-align: center;
+            color: white;
+            font-size: 22px;
+            font-family: Castoro;
+            font-weight: 400;
+            word-wrap: normal;
+            margin-left: 10%;
+            margin-right: 10%;
+            transition: 0.2s;
+        }
+        
+        #cap_invest {
+            background-image: url("./images/cap_invest.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* Center the background image */
+            /*background: #8AA2A6;*/
+            position: relative;
+            background-position: 50%;
+            animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+        
+        }
+        
+        #exp {
+            background-image: url("./images/exp_image.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* Center the background image */
+            /*background: #8AA2A6;*/
+            position: relative;
+            background-position: 50%;
+            animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+        }
+        
+        #IRR {
+            background-image: url("./images/IRR_image.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* Center the background image */
+            /*background: #8AA2A6;*/
+            position: relative;
+            background-position-y: 90%;
+            animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+            background-;
+        }
+
+
+
+        
+        #cap_invest_text{
+            min-width: 20%;
+        }
+        /*section6_contactus*/
+        
+        #section6_contactus {
+            width: 100%;
+            height: 20vh;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: white;
+        }
+
+        #contact_us_wrapper {
+            top: 35%;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+        }
+        
+
+        #contact_us {
+            position: absolute;
+            top: 40%;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #contact_us_text {
+            color: black;
+            font-size: 60px;
+            font-family: Castoro;
+            font-weight: 400;
+            text-decoration: underline;
+            text-transform: lowercase;
+            word-wrap: break-word;
+            padding-right: 20px;
+        }
+        
+        #contact_logo {
+            transition: 0.2s;
+
+        }
+        
+        #emailtext{
+            position: absolute;
+            top: 65%;
+            flex-direction: row;
+            color: black;
+            font-size: 14px;
+            font-family: Castoro;
+            font-weight: 400;
+            word-wrap: break-word;
+            max-width: 100%;
+            overflow: hidden;
+            /* Hide any overflow content */
+            transition: max-height 0.5s ease-in-out;
+        }
+        
+
+
+
+        
+        #contact_us_text {
+            color: black;
+            font-size: 30px;
+            font-family: Castoro;
+            font-weight: 400;
+            text-decoration: underline;
+            text-transform: lowercase;
+            word-wrap: break-word;
+            padding-right: 2px;
+            transition: 0.2s;
+            
+        }
+        
+        #contact_logo {
+            scale:0.5;
+            transition: 0.2s;
+
+        }
+        
+        /*end section*/
+        .bottom_bar {
+            width: 100%;
+            height: 12vh;
+            min-height: max-content;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            background-color: #CAE9FF;
+        }
+        
+        #logo_green {
+            margin-left: 5%;
+            margin-top: 3.5%;
+        }
+        
+        #logo_green img {
+            height: 55%;
+        }
+        
+        #bottom_bar_text {
+            margin-top: 3.7%;
+            margin-left: 4%;
+            margin-right: 5%;
+            color: black;
+            font-size: 8px;
+            font-family: Castoro;
+            font-weight: 400;
+            word-wrap: break-word
+        }
+        
+}
+/*MOBILE DESIGN*//*MOBILE DESIGN*//*MOBILE DESIGN*//*MOBILE DESIGN*//*MOBILE DESIGN*//*MOBILE DESIGN*/
+/*MOBILE DESIGN*//*MOBILE DESIGN*//*MOBILE DESIGN*//*MOBILE DESIGN*/
+/*MOBILE DESIGN*//*MOBILE DESIGN*//*MOBILE DESIGN*//*MOBILE DESIGN*//*MOBILE DESIGN*/
+/*MOBILE DESIGN*//*MOBILE DESIGN*//*MOBILE DESIGN*//*MOBILE DESIGN*//*MOBILE DESIGN*/
+
+
+@media screen and (max-width: 726px) {
+    html{
+        scroll-behavior: smooth;
+        }
+  
+        body {
+            transition: 0.3s;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        a.anchor{
+            display: block;
+            position: relative;
+            top: -250px;
+            visibility: hidden;
+        }
+        span{
+            width: 0px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .logo {
+            color: white;
+            position: fixed;
+            top: 40px;
+            left: 75vw;
+            right: 0;
+            z-index: 1;
+            zoom:0.5;
+            transition: 0.3s;
+        }
+        
+        #navbar_icon{
+            border: none;
+            background-color:transparent;
+            width: 40px;
+            height: 40px;
+            padding-left: 40px;
+            transition: 0.3s;
+            justify-content: center;
+            float: left;
+        } 
+        #navbar_icon_image{
+            width: 15px;
+            height: 15px;
+        }
+
+        /*THIS PART IS FOR THE OVERLAY NAV*/
+
+        #navbar-overlay {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 0%;
+            background-color: whitesmoke;
+            z-index: 100;
+            overflow: hidden;
+            transition: height 0.3s ease-in-out; /* Smooth transition */
+            box-shadow: 0 10px 10px 0 rgba(0,0,0,.2);
+
+        }
+
+
+        #closeNav {
+            display: block;
+            float: left;
+            position: absolute;
+            top: 11px;
+            left: 20px;
+            border: none;
+            background-color:transparent;
+            width: 40px;
+            height: 40px;
+            transition: 0.3s;
+            justify-content: center;
+            transition: 0.5s;
+        }
+
+        #close_button{
+            width: 40px;
+            height: 40px;
+            zoom: 2x;
+        }
+
+        #navbar-content-overlay{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #nav-item-overlay-container{
+            margin-top: 60px;
+            height:300px;
+        }
+        .nav-item-overlay{
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;        }
+              
+        hr{
+        }
+
+        .nav-item-overlay a{
+            text-align: center;
+            color: black;
+            font-size: 20px;
+            font-family: Castoro;
+            font-weight: 400;
+            transition: 0.4s;
+            display: block; /* Ensure the anchor tag takes up the entire width of its container */
+            width: 100%; /* Ensure the anchor tag takes up the entire width of its container */
+        
+        }
+
+
+        /*OVERLAY END*/
+
+
+        .navbar {
+            position: fixed;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            left: 0;
+            right: 0;
+            z-index: 99;
+            background-color: transparent;
+            transition: background-color 0.2s ease-in-out; /* Smooth transition */
+        }
+        
+        .navbar-content {
+            width: 100%;
+            /*max-width: 1200px; */
+            display: flex;
+        
+        }
+        
+        .nav-item {
+            color: white;
+            font-size: 0px;
+            font-family: Castoro;
+            font-weight: 400;
+            text-transform: capitalize;
+            word-wrap: break-word;
+            z-index: 100;
+            width: 0px;
+            height: 0px;
+        }
+        
+        
+        
+        .hero {
+            width: 100%;
+            height: 50vh;
+            background-image: url("./images/hero.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* Center the background image */
+            /*background: #8AA2A6;*/
+            position: relative;
+            animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+            transition: 0.4s;
+
+
+        }
+        
+        
+        .hero-holder:hover {
+            transform: scale(1.0);
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .hero-content {
+            position: absolute;
+            scale:0.5;
+            top: 65%;
+            left: -10%;
+            zoom: 60%;
+        }
+        
+        /*Section 1*/
+        .section-container {
+            width: 100%;
+            height: 50%;
+            min-height: max-content;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        
+        .section_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-left: 5%;
+            margin-right: 5%;
+            transition: 0.4s;
+            padding-top: 30px;
+            min-height: max-content;
+        }
+        
+        
+        .section_title,
+        h1 {
+            color: black;
+            font-size: 20px;
+            font-family: NT Wagner;
+            font-weight: 700;
+            text-transform: capitalize;
+            word-wrap: break-word;
+            transition: 0.2s;
+        }
+
+        #section1_aboutus_title {
+            padding-bottom: 5%;
+        }
+        
+        
+        .section_body {
+            color: black;
+            font-size: 14px;
+            font-family: Castoro;
+            font-weight: 400;
+            transition: 0.4s; 
+            padding-bottom: 5px;
+            overflow: hidden;
+        }
+
+
+        #section1_fade_formobile{
+            height: 50px;
+        }
+        
+        #section1_aboutus_image_section {
+            max-height: 40vh;
+            overflow: hidden;
+            }
+        
+        
+        #section1_aboutus_image {
+            width: 100%;
+            max-height: 40vh;
+            scale: 1.5;
+            bottom:80px;
+            object-fit: cover;
+            /* Scale the image to cover the container */
+            animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+    
+        
+        }
+        
+        /*section 2*/
+        .section-container_column {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            background-color: #1C4866;
+            
+        }
+        
+        .section_text_column {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: top;
+            /* Add this line to center vertically */
+            align-content: center;
+            /* Add this line for additional centering */
+            padding-top: 30px;
+            margin-left: 5%;
+
+
+        }
+        
+        #section2_ourpurpose_title {
+            color: white;
+            margin-right: auto;
+            
+        }
+                
+        #section2_ourpurpose_list_item1_title {
+            padding-top: 20px;
+            line-height: 140%;
+            padding-bottom: 8px;
+        }
+
+
+        
+        .section_list {
+            margin-right: 5%;
+            min-width: 50vw;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            transition: 0.4s;
+        }
+        .section_list:last-child {
+            margin-bottom: 10%;
+        }
+        
+        .section_list_title {
+            color: white;
+            font-size: 16px;
+            font-family: NT Wagner;
+            font-weight: 700;
+            line-height: 60px;
+            word-wrap: break-word
+        }
+        
+        .section_list_body {
+
+            color: white;
+            font-size: 14px;
+            font-family: Castoro;
+            font-weight: 400;
+            overflow: auto;
+            word-wrap: break-word;
+        }
+        
+        /*section3 */
+        #section3_ourthesis {
+            background-color: white;
+            height: max-content;
+            min-height: max-content;
+            max-height: none;
+            transition: max-height 0.5s ease-in-out;
+            display: flex;
+            align-items: top;
+            align-content: center;
+            padding-bottom: 8%;
+            /* Add a transition for smooth expansion/collapse */
+        }
+        
+        #section3_ourthesis_list_item1_title{
+            line-height: 140%;
+            padding-bottom: 18px;
+            padding-top: 20px;
+        }    
+        
+        #section3_ourthesis_title {
+            color: rgb(0, 0, 0);
+            margin-right: auto;
+        }
+        
+        .accordion {
+            margin-right: 10%;
+            max-width: 100%;
+            min-width: 100%;
+            transition: 0.4s;
+        }
+        
+        li {
+            font-size: 16px;
+        }
+        
+        ul {
+            padding-left: 1.5rem;
+
+        }
+        
+        
+        .accordion-header {
+            color: black;
+            background-color: transparent;
+            border: 0px;
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 16px;
+            font-family: NT Wagner;
+            font-weight: 700;
+            line-height: 50px;
+            word-wrap: break-word;
+            width:100%;
+            text-align: left;
+        }
+        
+        .accordion-content {
+            color: black;
+            font-size: 14px;
+            font-family: Castoro;
+            font-weight: 400;
+            word-wrap: break-word;
+            max-width: 100%;
+
+            max-height: 0;
+            /* Initially, hide the content by setting max-height to 0 */
+            overflow: hidden;
+            /* Hide any overflow content */
+            transition: max-height 0.5s ease-in-out;
+            /* Adjust the transition duration (0.5s in this example) */
+        }
+        
+        
+        /* Style for the "+" icon at the end of each section */
+        .accordion-header::after {
+            content: "+";
+            font-size: 20px;
+            transition: transform 0.5s ease;
+            /* Increase the transition duration to 0.5s for a slower change */
+            display: inline-block;
+            /* Ensure the element takes up space for the transform to work */
+            transform: rotate(0deg);
+            /* Start with no rotation */
+        
+        }
+        
+        /* Style for the "-" icon when the section is expanded */
+        .accordion-header.active::after {
+            content: "-";
+            transform: rotate(180deg);
+        }
+        
+        
+        
+        
+        
+        /*section break*/
+        
+        
+        #section3_4_break {
+            display: flex;
+            width: 100%;
+            height: 15vh;
+            background-image: url("./images/sectionbreak3_4_image.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+            /* Center the background image */
+            /*background: #8AA2A6;*/
+        }
+        
+        /*section 4*/
+        
+        #section4_activeprojects{
+            height: auto;
+        }
+
+        
+        #section4_Tucson_image_section {            
+            /*align-self:flex-end;*/
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+            transition: 0.2s;
+      
+            
+        }
+        
+        
+        #section4_activeprojects_body b {
+            color: black;
+            font-size: 18px;
+            font-family: Caslon;
+            font-style: italic;
+            font-weight: 5;
+            line-height: 60px;
+        }
+        
+        #section4_Tucson_image {
+            width: 80vw;
+            height: 300px;
+            object-fit: cover;
+            /* Scale the image to cover the container */
+            animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+        
+        }
+        
+        .line_break {
+            height: 0vh;
+        }
+        
+        /*section 5*/
+        #section5_stat {
+            width: 100%;
+            min-height: min-content;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: white;
+            transition: 0.2s;
+        }
+        
+        .stat_banner {
+            width: 100%;
+            min-height: 250px;
+        
+        }
+        
+        .stat_title {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            height: 65%;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            color: white;
+            font-size: 60px;
+            font-family: NT Wagner;
+            font-weight: 700;
+            text-transform: capitalize;
+            word-wrap: break-word;
+            transition: 0.2s;
+        }
+        
+        
+        .stat_subtitle {
+            width: 100%;
+            height: 40%;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            transition: 0.2s;
+        
+        }
+        
+        .stat_subtitle_subtextbox {
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            font-family: Castoro;
+            font-weight: 400;
+            word-wrap: normal;
+            margin-left: 10%;
+            margin-right: 10%;
+            transition: 0.2s;
+        }
+        
+        #cap_invest {
+            background-image: url("./images/cap_invest.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* Center the background image */
+            /*background: #8AA2A6;*/
+            position: relative;
+            background-position: 50%;
+            animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+        
+        }
+        
+        #exp {
+            background-image: url("./images/exp_image.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* Center the background image */
+            /*background: #8AA2A6;*/
+            position: relative;
+            background-position: 50%;
+            animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+        }
+        
+        #IRR {
+            background-image: url("./images/IRR_image.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* Center the background image */
+            /*background: #8AA2A6;*/
+            position: relative;
+            background-position: 50% 80%;
+            animation: fadeIn 1s ease-in-out forwards; /* Apply the fade-in animation */
+        }
+        
+        #cap_invest_text{
+            min-width: 20%;
+        }
+        /*section6_contactus*/
+        
+        
+        #section6_contactus {
+            width: 100%;
+            height: 15vh;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: white;
+        }
+        #contact_us_wrapper {
+            top: 35%;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+        }
+        
+
+        #contact_us {
+            position: absolute;
+            top: 40%;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #contact_us_text {
+            color: black;
+            font-size: 20px;
+            font-family: Castoro;
+            font-weight: 400;
+            text-decoration: underline;
+            text-transform: lowercase;
+            word-wrap: break-word;
+        }
+        
+        #contact_logo {
+            transition: 0.2s;
+            scale: 0.3;
+            zoom:1.2;
+            width: 20px;
+            height: 20px;
+            margin-top: -1px;
+        }
+        
+        #emailtext{
+            position: absolute;
+            top: 70%;
+            flex-direction: row;
+            color: black;
+            font-size: 12px;
+            font-family: Castoro;
+            font-weight: 400;
+            word-wrap: break-word;
+            max-width: 90%;
+            text-align: center;
+            overflow: hidden;
+            /* Hide any overflow content */
+            transition: max-height 0.5s ease-in-out;
+        }
+        
+
+        /*end section*/
+        .bottom_bar {
+            width: 100%;
+            height: 5vh;
+            min-height: 50px;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            background-color: #CAE9FF;
+        }
+        
+        #logo_green {
+            margin-left: 5%;
+            margin-top: 3.5%;
+        }
+        
+        #logo_green img {
+            height: 55%;
+        }
+        
+        #bottom_bar_text {
+            margin-top: 3.7%;
+            margin-left: 4%;
+            margin-right: 5%;
+            color: black;
+            font-size: 6px;
+            font-family: Castoro;
+            font-weight: 400;
+            word-wrap: break-word
+        }
+        
+}
