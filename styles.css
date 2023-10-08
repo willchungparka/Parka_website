@@ -573,10 +573,15 @@ li {
         }
         
         body {
-            transition: 0.3s;
-            overflow-y: hidden; /* Hide vertical scrollbar */
             overflow-x: hidden; /* Hide horizontal scrollbar */
+            transition: 0.3s;
+            scrollbar-width: none;  /* Firefox */
+            -ms-overflow-style: none;  /* IE and Edge */
         }
+        #content::-webkit-scrollbar {
+            display: none;
+        }
+
         a {
             color: inherit;
             text-decoration: none;
@@ -1255,6 +1260,8 @@ li {
         #logo_green {
             margin-left: 5%;
             margin-top: 3.5%;
+            width: 60px;
+            height: 60px;
         }
         
         #logo_green img {
@@ -1285,10 +1292,15 @@ li {
         }
   
         body {
-            overflow-y: hidden; /* Hide vertical scrollbar */
             overflow-x: hidden; /* Hide horizontal scrollbar */
             transition: 0.3s;
+            scrollbar-width: none;  /* Firefox */
+            -ms-overflow-style: none;  /* IE and Edge */
         }
+        #content::-webkit-scrollbar {
+            display: none;
+        }
+
         a {
             color: inherit;
             text-decoration: none;
@@ -1937,7 +1949,7 @@ li {
         .bottom_bar {
             width: 100%;
             height: 5vh;
-            min-height: 50px;
+            min-height: 60px;
             position: relative;
             display: flex;
             flex-direction: row;
@@ -1948,6 +1960,8 @@ li {
         #logo_green {
             margin-left: 5%;
             margin-top: 3.5%;
+            width: 40px;
+            height: 40px;
         }
         
         #logo_green img {
