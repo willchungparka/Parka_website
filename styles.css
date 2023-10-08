@@ -574,6 +574,8 @@ li {
         
         body {
             transition: 0.3s;
+            overflow-y: hidden; /* Hide vertical scrollbar */
+            overflow-x: hidden; /* Hide horizontal scrollbar */
         }
         a {
             color: inherit;
@@ -1283,6 +1285,8 @@ li {
         }
   
         body {
+            overflow-y: hidden; /* Hide vertical scrollbar */
+            overflow-x: hidden; /* Hide horizontal scrollbar */
             transition: 0.3s;
         }
         a {
@@ -1308,7 +1312,7 @@ li {
             color: white;
             position: fixed;
             top: 40px;
-            left: 75vw;
+            left: 36%;
             right: 0;
             z-index: 1;
             zoom:0.5;
@@ -1951,11 +1955,12 @@ li {
         }
         
         #bottom_bar_text {
+            width: 80%;
             margin-top: 3.7%;
             margin-left: 4%;
             margin-right: 5%;
             color: black;
-            font-size: 6px;
+            font-size: 5px;
             font-family: Castoro;
             font-weight: 400;
             word-wrap: break-word
